@@ -33,7 +33,7 @@ class Neuron(Module):
         return self.w + [self.b]
 
     def __repr__(self):
-        return f"{'Linear' if self.nonlin is False else self.nonlin}Neuron({len(self.w)})"
+        return f"{'Linear' if self.nonlin is None else self.nonlin}Neuron({len(self.w)})"
 
 class Layer(Module):
 
